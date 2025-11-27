@@ -8,6 +8,8 @@ jobs:
     steps: 
       - name: checkout
         uses: actions/checkout@v4
+      - run: dotnet format
       - run: dotnet build 
       - run: dotnet test
+      
         
